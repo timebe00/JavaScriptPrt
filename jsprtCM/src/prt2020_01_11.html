@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function hello1(name) {
+            console.log("hello " + name + "!")
+            console.log(`hello ${name}!`)
+        }
+        hello1("world1")
+        let hello2 = (name) => {
+            console.log("hello " + name + "!")
+            console.log(`hello ${name}!`)
+        }
+        hello2("world2")
+
+        arr1 = [10, 20, 30, 40, 50]
+
+        for(let i in arr1) {
+            console.log("i : " + i)
+            console.log("arr1 : " + arr1[i])
+        }
+
+        for(let i of arr1) {
+            console.log("i : " + i)
+        }
+
+        let arr2 = arr1.map(x => x * 2)
+        for(let i of arr2) {
+            console.log("i : " + i)
+        }
+
+        console.log("arr1.indexOf(30) : " + arr1.indexOf(30))
+
+        console.log("arr1.splice(0 ,arr1.indexOf(30))  : " + arr1.splice(0 ,arr1.indexOf(30)))
+         console.log("arr1.splice(arr1.indexOf(40) ,arr1.length)  : " + arr1.splice(arr1.indexOf(40), arr1.length))
+        for(let i of arr1) {
+            console.log("i : " + i)
+        }
+
+        console.log("arr1.push(40) : " + arr1.push(40))
+        console.log("arr1.push(40) : " + arr1.push(50))
+        console.log("arr1.unshift(20) : " + arr1.unshift(20))
+        console.log("arr1.unshift(10) : " + arr1.unshift(10))
+        for(let i of arr1) {
+            console.log("i : " + i)
+        }
+        let arr3 = arr1.concat(arr2)
+        for(let i of arr3) {
+            console.log("arr3 : " + i)
+        }
+        for(let i of arr2) {
+            console.log("arr2 : " + i)
+        }
+        for(let i of arr1) {
+            console.log("arr1 : " + i)
+        }
+
+        let sum1 = arr1.reduce((a,b) => a + b, 0)
+        console.log("sum1 : " + sum1)
+        let arr4 = ["a", "b", "c"]
+
+         for(let i of arr4) {
+            console.log("arr4 : " + i)
+        }
+        let sum2 = arr4.reduce((a,b) => a + b, "")
+        console.log("sum2 : " + sum2)
+
+        let sum3 = arr4.reduce(a,b => {
+            a + b
+            if(a === a) {
+                console.log("get a")
+            }
+        }, "")
+    </script>
+</head>
+<body>
+
+</body>
+</html>
