@@ -67,12 +67,21 @@
         let sum2 = arr4.reduce((a,b) => a + b, "")
         console.log("sum2 : " + sum2)
 
-        let sum3 = arr4.reduce(a,b => {
-            a + b
-            if(a === a) {
-                console.log("get a")
+        const fruit = ['apple', 'grape', 'banana', 'apple', 'orange', 'grape', 'apple', 'orange'];
+
+        const result = fruit.reduce((object, currentValue) => {
+            console.log(object);
+            console.log("currentValue : " + currentValue);
+            console.log("!object[currentValue] : " + !object[currentValue]);
+            if (!object[currentValue]) {
+                object[currentValue] = 0;
             }
-        }, "")
+            object[currentValue]++;
+
+            return object;
+        }, {});
+
+        console.log(result);
     </script>
 </head>
 <body>

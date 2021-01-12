@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        const open = document.getElementById('open');
+        const close = document.getElementById('close');
+        const model = document.getElementById('model');
+
+        open.onclick=()=> {
+            open
+        }
+    </script>
 </head>
 <body>
-$END$
+    <button id="open">ㅁ</button>
+    <div class="a" style="display: none">
+        <div class ="model">a</div>
+    </div>
 </body>
 </html>
+<style>
+.a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%,
+    height: 100%,
+    align-items: center;
+}
+</style>
