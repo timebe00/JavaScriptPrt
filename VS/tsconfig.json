@@ -1,10 +1,20 @@
 {
+    //  tsc 할때 읽을 파일 위치 선정해 주기
     "include": [
         "src/**/*.ts"
     ],
+
     "exclude": [
         "node_modules"
     ],
+    /*
+        "module": "es6",
+        "rootDir": "src",
+        "outDir": "dist",
+        "target": "es6",    ts es버전 설정
+        "sourceMap": true,
+        "removeComments": true    
+    */
     "compilerOptions": {
         "module": "es6",
         "rootDir": "src",
