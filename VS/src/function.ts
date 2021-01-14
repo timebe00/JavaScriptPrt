@@ -21,9 +21,12 @@ interface ColdStorage {
     b: string;
 }
 
+//  type이 아이스크림 이면 반환값이 ColdStorage형태야 함
 function store(type: "아이스크림"): ColdStorage
+//  type이 통조림 이면 반환값이 Storage형태야 함
 function store(type: "통조림"): Storage
 
+//  타입이 통조림 or 아이스크림만 올 수 있도록 만듬
 function store(type: "통조림" | "아이스크림") {
     if(type === "통조림") {
         return {a: "통조림"}
@@ -33,6 +36,6 @@ function store(type: "통조림" | "아이스크림") {
         throw new Error('unsupported type')
     }
 }
-
+//  아이스크림으로 store에 넣어줌
 const s = store('아이스크림');
 s.b;

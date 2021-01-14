@@ -1,0 +1,28 @@
+//  컴파일 설정
+
+{
+    //  tsc 할때 읽을 파일 위치 선정해 주기
+    "include": [
+        "src/**/*.ts"
+    ],
+    //  node으로 설치한 모듈들을 import 가능하도록 설정
+    "exclude": [
+        "node_modules"
+    ],
+    /*
+        "module": "es6",    js파일 es버전 설정
+        "rootDir": "src",   ts 파일 읽는 위치
+        "outDir": "dist",   js 파일 만드는 위치
+        "target": "es6",    ts파일 es버전 설정
+        "sourceMap": true,  .js.map파일도 함께 생성한다.
+        "removeComments": true    주석을 컴파일 안하게 하는 설정
+    */
+    "compilerOptions": {
+        "module": "es6",
+        "rootDir": "src",
+        "outDir": "dist",
+        "target": "es6",
+        "sourceMap": true,
+        "removeComments": true    
+    }
+}

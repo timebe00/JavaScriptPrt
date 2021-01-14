@@ -1,4 +1,4 @@
-class A {
+class Avido {
     play() {
         throw new Error("Method not implemented.");
     }
@@ -6,19 +6,27 @@ class A {
         throw new Error("Method not implemented.");
     }
 }
-let a;
+class Bvido {
+    play() {
+        throw new Error("Method not implemented.");
+    }
+    stop() {
+        throw new Error("Method not implemented.");
+    }
+}
+let allvido;
 function PNS(url) {
     if (url === "youtube") {
-        a.play;
-        a.stop;
+        allvido = new Avido;
     }
     else if (url === "twitch") {
-        a.play;
-        a.stop;
+        allvido = new Bvido;
     }
     else {
         const e = new Error;
         e.name = "Why?";
     }
+    allvido.play;
+    allvido.stop;
 }
 //# sourceMappingURL=prtclass.js.map
