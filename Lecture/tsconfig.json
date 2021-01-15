@@ -16,12 +16,14 @@
         "target": "es6",    ts파일 es버전 설정
         "sourceMap": true,  .js.map파일도 함께 생성한다.
         "removeComments": true    주석을 컴파일 안하게 하는 설정
+        "outFile" : js이 나가는 파일 지정하기
     */
     "compilerOptions": {
         "module": "es6",
         "rootDir": "src",
         "outDir": "dist",
         "target": "es6",
+        // "outFile": "dist/input.js",
         "sourceMap": true,
         "removeComments": true    
     }

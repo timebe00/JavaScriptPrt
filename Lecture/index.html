@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UX-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <input id="writeurl" value="txt">
-    <button id="OKbtn">확인</button><br/>
-    <button id="start"></button>
-    <button id="stop"></button>
+    <input id="writeurl" value="you">
+    <button id="OKbtn">확인</button><br/><br/>
+    <div id="a" height="100px"></div>
+    <video id='player' controls preload='none'></video><br/>
+    <button id="btnPlay" class="btnPlay">재생</button>
+    <button id="btnStop" class="btnStop">중지</button>
+    <button id="btntime" class="btnStop">시간 확인</button>
     <script type="module" src="./dist/home.js"></script>
 </body>
 </html>
