@@ -18,6 +18,7 @@ const p: Props = {
 }
 */
 
+//  해쉬맵 만듬
 let keys: keyof Props;
 
 interface User {
